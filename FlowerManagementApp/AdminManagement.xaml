@@ -1,0 +1,21 @@
+﻿<Window x:Class="FlowerManagementApp.AdminManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerManagementApp"
+        mc:Ignorable="d"
+        Title="AdminManagement" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtOption" HorizontalAlignment="Left" Margin="55,105,0,0" TextWrapping="Wrap" Text="Option" VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged" Height="22"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="639,364,0,0" VerticalAlignment="Top" Height="41" Width="88" Click="txtClose_Click"/>
+        <Button x:Name="btnChoose" Content="Choose" HorizontalAlignment="Left" Margin="279,198,0,0" VerticalAlignment="Top" Height="29" Width="108" Click="btnChoose_Click"/>
+        <ComboBox x:Name="cmbOption" HorizontalAlignment="Left" Margin="279,105,0,0" VerticalAlignment="Top" Width="181" SelectionChanged="cmbOption_SelectionChanged">
+            <ComboBoxItem Content="Customer Management"/>
+            <ComboBoxItem Content="Flowers Management"/>
+            <ComboBoxItem Content="Order Management"/>
+        </ComboBox>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="503,364,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="btnBack_Click"/>
+
+    </Grid>
+</Window>
